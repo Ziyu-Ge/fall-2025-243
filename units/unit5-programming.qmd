@@ -833,7 +833,7 @@ We can use the `__file__` and `__version__` objects in a package to see where on
 
 ```{python}
 import numpy as np
-np.__file__
+np.__file__ # show the location of the package
 np.__version__
 ```
 
