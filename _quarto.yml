@@ -1,16 +1,23 @@
 project:
   type: website
+  # 新增：把构建结果放到 docs/，方便用 Pages 的 /docs 方式
+  output-dir: docs
 
 website:
-  site-url: https://stat243.berkeley.edu/fall-2025
+  # 改成你自己的 Pages 域名（仓库名是 fall-2025-243）
+  site-url: https://ziyu-ge.github.io/fall-2025-243
+  # 声明Ziyu的仓库，页面会出现“Edit this page”等链接
+  repo-url: https://github.com/Ziyu-Ge/fall-2025-243
+  repo-actions: [source, edit, issue]
+
   sidebar:
     style: docked
-    title: "Stat 243"
+    title: "Stat 243 (Ziyu’s Notes)"   # 改个小标题，和教授区分
     logo: assets/stat_bear.png
     logo-alt: "UC Berkeley Statistics logo"
     tools:
       - icon: github
-        href: https://github.com/berkeley-stat243/fall-2025
+        href: https://github.com/Ziyu-Ge/fall-2025-243    # 改为Ziyu的仓库
         aria-label: GitHub
     contents:
       - href: index.qmd
@@ -49,26 +56,11 @@ website:
             text: "Unit 12 (Graphics)"
       - section: "Labs"
         contents:
+          # 这些是现成的 HTML 文件（不是 qmd）
           - href: labs/lab0-setup.html
             text: "Lab 0 (Optional setup)"
           - href: labs/lab1-submission.html
             text: "Lab 1 (Quarto/Git/Submission)"
-          # - href: labs/lab2-testing.html
-          #   text: "Lab 2 (Exceptions/Testing)"
-          # - href: labs/lab3-debugging.html
-          #   text: "Lab 3 (Debugging)"
-          # - href: labs/lab4-reproducibility.html
-          #   text: "Lab 4 (Reproducibility)"
-          # - href: labs/lab5-codereview.html
-          #   text: "Lab 5 (Code review)"
-          # - href: labs/lab6-scfparallel.html
-          #   text: "Lab 6 (SCF and parallelization)"
-          # - href: labs/lab7-pythonvsr.html
-          #   text: "Lab 7 (Python vs. R)"
-          # - href: labs/lab8-simulation.html
-          #   text: "Lab 8 (Simulation)"
-          # - href: labs/lab9-git.html
-          #   text: "Lab 9 (Collaboration with Git)"
       - section: "Problem Sets"
         contents:
           - href: ps/ps1.qmd
@@ -102,5 +94,4 @@ format:
       file: siteimprove.html
 
 execute:
-  freeze: auto
-
+  freeze: auto 
