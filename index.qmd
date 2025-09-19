@@ -1,6 +1,6 @@
 ---
-title: "Statistics 243: Introduction to Statistical Computing"
-subtitle: "UC Berkeley, Spring 2025"
+title: "Statistics 243 Notes (Ziyu Ge)"
+subtitle: "UC Berkeley, Fall 2025"
 listing:
   - id: buttons
     template: assets/buttons.ejs
